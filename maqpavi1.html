@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavimentação Profissional - Sua Solução em Pisos e Pavimentos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FF6600; /* Laranja construção */
+            --secondary-color: #CC0000; /* Vermelho */
+            --neutral-color: #666666; /* Cinza */
+            --light-bg: #f8f9fa;
+            --dark-text: #333333;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+        }
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://dfblocos.com/wp-content/uploads/2025/02/pisos-intertravado-16-faces.jpg') center/cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-icon {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .portfolio img {
+            width: 100%;
+            height: 250px; /* Aumentei a altura para melhor visualização dos detalhes dos bloquetes */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .testimonial {
+            background: white;
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        footer {
+            background-color: var(--neutral-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+        #map {
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .location-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .location-icon {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-road"></i> Pavimentação Profissional</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Localização</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Soluções Profissionais em Pavimentação</h1>
+            <p>Instalamos, reformamos e mantemos pisos intertravados e pavimentos para residências, comércios e indústrias.</p>
+            <a href="https://wa.me/5511916328704?text=Olá! Gostaria de um orçamento para pavimentação com bloquetes." class="btn btn-primary btn-lg" target="_blank">Fale Conosco via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Sobre a Empresa</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p>Somos uma empresa especializada em pavimentação com mais de 10 anos de experiência. Nosso foco é entregar qualidade e durabilidade em todos os projetos, utilizando materiais de alta performance e mão de obra qualificada. Atendemos desde pequenos residenciais até grandes obras industriais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-home service-icon"></i>
+                        <h4>Instalação de Pisos Intertravados Residenciais</h4>
+                        <p>Pisos duráveis e estéticos para áreas residenciais, com opções personalizadas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-building service-icon"></i>
+                        <h4>Pavimentação Comercial/Industrial</h4>
+                        <p>Soluções robustas para tráfego intenso em comércios e indústrias.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-tools service-icon"></i>
+                        <h4>Manutenção e Reforma de Pavimentos</h4>
+                        <p>Reparos e renovações para prolongar a vida útil de qualquer pavimento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Portfólio - Pisos Bloquetes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://i.pinimg.com/originals/b4/7b/72/b47b7272c51415dcf4e879c83d3b4cd2.jpg" alt="Instalação residencial de pisos bloquetes intertravados em quintal com jardim" class="img-fluid">
+                    <p class="mt-2 text-center">Instalação residencial de bloquetes em padrão decorativo para quintais e calçadas.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://www.alemaodaspedras.com.br/wp-content/uploads/2017/03/DSCF1154_10.jpg" alt="Pavimentação comercial com bloquetes duráveis para estacionamento" class="img-fluid">
+                    <p class="mt-2 text-center">Pavimentação comercial com bloquetes resistentes para áreas de alto tráfego como estacionamentos.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://www.carpavpavimentacao.com.br/img/pisos-intertravados.jpg" alt="Manutenção de pisos bloquetes em área industrial" class="img-fluid">
+                    <p class="mt-2 text-center">Reforma e manutenção de pavimentos com bloquetes para indústrias e obras pesadas.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-4">
+                    <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/07/18/piso-intertravado-para-patio.jpg" alt="Detalhe de instalação de bloquetes intertravados em residência" class="img-fluid">
+                    <p class="mt-2 text-center">Detalhe de bloquetes em instalação residencial, destacando durabilidade e estética.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="https://arcovan.com.br/wp-content/uploads/2024/11/Frame-11214.png" alt="Piso bloquete em área comercial moderna" class="img-fluid">
+                    <p class="mt-2 text-center">Bloquetes em aplicação comercial, com acabamento profissional e drenagem eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Depoimentos de Clientes</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>"Excelente serviço! O piso de bloquetes intertravado transformou nosso quintal. Recomendo!"</p>
+                        <cite>- João Silva, Cliente Residencial</cite>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>"Profissionais qualificados e entrega no prazo. Nossa área industrial com bloquetes ficou perfeita."</p>
+                        <cite>- Empresa XYZ, Cliente Industrial</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="location" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Nossa Localização</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="location-info text-center">
+                        <i class="fas fa-map-marker-alt location-icon"></i>
+                        <h4>Endereço</h4>
+                        <p>Avenida Dos Emancipadores, 150<br>Centro, Campo Limpo Paulista<br>São Paulo - SP, CEP 13230-060<br>Atendemos toda a região metropolitana de São Paulo e interior.</p>
+                        <p><i class="fas fa-phone"></i> (11) 916328704<br><i class="fas fa-envelope"></i> marcelo63517@gmail.com</p>
+                        <a href="https://wa.me/5511916328704?text=Olá! Gostaria de um orçamento para pavimentação com bloquetes." class="btn btn-primary mt-2" target="_blank">Fale via WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.123456789!2d-46.652123456789!3d-23.56123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd1600a0a0a0a0a0a!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1690000000000!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Pavimentação Profissional. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5511916328704" class="text-white" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
